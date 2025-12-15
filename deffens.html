@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="mt-4 section-title">The Cortex - Defence</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/defence.css">
+
+</head>
+<body>
+
+<!--nav bar-Start-->
+    <div class="navbar-container">
+        <div class="logo">
+            <img src="https://dawraty.com/wp-content/uploads/elementor/thumbs/%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86-%D9%85%D9%88%D9%82%D8%B9-%D8%AF%D9%88%D8%B1%D8%A7%D8%AA%D9%8A-rc1vh7cinnfpl8mss608i0jmjz5c64jya6sbshm134.png" alt="The Cortex Logo" class="logo-img">
+            <span class="logo-text">The Cortex</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn" id="dropdown">CYBER WARFARE ▼</a>
+                <div class="dropbox">
+                    <a href="deffens.html" class="drop">DEFENCE</a>
+                    <a href="offence.html" class="drop">OFFENCE</a>
+                </div>
+            </div>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+  
+<!-- HERO SECTION -->
+<section class="hero d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+    <h1 class="hero-title col-md-6">Prevention Methods</h1>
+</section>
+
+<!-- SQL INJECTION SECTION -->
+<section class="py-5 sql-section text-white">
+    <div class="container">
+        <h2 class="text-center section-title">SQL Injection</h2>
+
+        <div class="row mt-5 align-items-center">
+            <div class="col-md-6">
+                <h4 class="mt-4 section-title">1 Web Vulnerability – SQL Injection</h4>
+                <p>
+                    🔏How to Protect Yourself (Developer + User)/<br>
+                    ➡️As a User:<br>
+                    <br>
+                    📍Don't enter sensitive data on unsecured websites (no HTTPS).<br>
+                    <br>
+                    📍Avoid using public WiFi when entering passwords.<br>
+                    <br>
+                    📍Use password managers to avoid typing credentials manually.<br>
+                    <br>
+                    ➡️As a Developer / Admin:<br>
+                    <br>
+                    📍Always use prepared statements / parameterized queries.<br>
+                    <br>
+                    📍Validate and sanitize all user inputs.<br>
+                    <br>
+                    📍Disable error messages that reveal database details.<br>
+                    <br>
+                    📍Apply the principle of least privilege on the database.<br>
+                    <br>
+                    📍Use a WAF (Web Application Firewall) like Cloudflare or ModSecurity.<br>
+                    <br>
+                    📍Keep database engines and frameworks updated.
+                </p>
+            </div>
+
+            <div class="col-md-6 sql-images text-end">
+                <img src="images/sql1.png" class="img-fluid rounded shadow mb-3" alt="SQL Injection Example 1">
+                <br>
+                <img src="images/sql2.png" class="img-fluid rounded shadow" alt="SQL Injection Example 2">
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <img src="images/sql-code.png" class="img-fluid rounded shadow big-img" alt="SQL Code Example">
+        </div>
+    </div>
+</section>
+
+<!-- INSECURE DATA STORAGE -->
+<section class="py-5 insecure-section text-white">
+    <div class="container">
+        <h2 class="text-center section-title">Insecure Data Storage</h2>
+         <div class="row mt-5 align-items-center">
+            <div class="col-md-6">
+                <h4 class="mt-4 section-title">2) Mobile App Vulnerability – Insecure Data Storage</h4>
+                <p>
+                    🔏How to Protect Yourself<br>
+                    ➡️ As a User:<br>
+                    <br>
+                    🔷Never log in on apps that don't show the HTTPS padlock.<br>
+                    <br>
+                    🔷Avoid installing apps outside Google Play / App Store.<br>
+                    <br>
+                    🔷Disable "Install unknown apps" on your phone.<br>
+                    <br>
+                    🔷Use a VPN on public networks.<br>
+                    <br>
+                    ➡️As a Developer / Admin:<br>
+                    <br>
+                    🔷Enforce HTTPS/TLS 1.2+ on all API endpoints.<br>
+                    <br>
+                    🔷Block old/insecure ciphers.<br>
+                    <br>
+                    🔷Use token-based authentication (JWT, OAuth2).<br>
+                    <br>
+                    🔷Validate certificates (prevent MITM).<br>
+                    <br>
+                    🔷Store passwords only using hashing functions (BCrypt, Argon2).<br>
+                    <br>
+                    🔷Perform API penetration testing regularly.
+                </p>
+            </div>
+
+            <div class="col-md-6 text-end">
+                <img src="images/mobile1.webp" class="img-fluid rounded shadow mobile-img" alt="Mobile Security 1">
+                <br><br><br><br><br><br>
+                <img src="images/mobile2.webp" class="img-fluid rounded shadow mobile-img" alt="Mobile Security 2">
+            </div>
+         </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container-fluid px-0">
+        <div class="footer-container">
+            <div class="footer-column fade-in-left">
+                <h3 class="footer-title">About Us</h3>
+                <p class="footer-text">We are dedicated to providing comprehensive cybersecurity education and awareness to help individuals and organizations stay protected in the digital world.</p>
+                <div class="subscribe-box">
+                    <input type="email" placeholder="Enter your email" class="subscribe-input">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-column fade-in-up" data-delay="0.2">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="deffens.html">Defence</a></li>
+                    <li><a href="offence.html">Offence</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column fade-in-up" data-delay="0.3">
+                <h3 class="footer-title">Business Hours</h3>
+                <p class="footer-text">Mon - Friday: 10:00 am to 07:00 pm</p>
+                <p class="footer-text">Saturday: 10:00 am to 04:00 pm</p>
+                <p class="footer-text">Sunday: Holiday</p>
+            </div>
+            <div class="footer-column fade-in-right">
+                <h3 class="footer-title">Contact Info</h3>
+                <p class="footer-text">123 Cyber Street, Digital City</p>
+                <p class="footer-text">bodymgdy2@gmail.com</p>
+                <p class="footer-text">+201016583599</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Typing Tagline -->
+        <div class="tagline-container fade-in-up">
+            <h4>Cyber Security for <span id="typing-tagline" class="typing-text"></span></h4>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2024 The Cortex. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Typing effect
+function typeTagline() {
+    const element = document.getElementById('typing-tagline');
+    const texts = ['defence', 'offence', 'all in one place'];
+    let currentTextIndex = 0;
+    let currentCharIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 100;
+    let deletingSpeed = 50;
+    
+    function type() {
+        const currentText = texts[currentTextIndex];
+        
+        if (!isDeleting) {
+            if (currentCharIndex < currentText.length) {
+                element.textContent = currentText.substring(0, currentCharIndex + 1);
+                currentCharIndex++;
+                setTimeout(type, typingSpeed);
+            } else {
+                isDeleting = true;
+                setTimeout(type, 1500);
+            }
+        } else {
+            if (currentCharIndex > 0) {
+                element.textContent = currentText.substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+                setTimeout(type, deletingSpeed);
+            } else {
+                isDeleting = false;
+                currentTextIndex = (currentTextIndex + 1) % texts.length;
+                setTimeout(type, 500);
+            }
+        }
+    }
+    
+    setTimeout(type, 1000);
+}
+
+// Scroll to top
+const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Footer animations
+document.addEventListener('DOMContentLoaded', () => {
+    typeTagline();
+    
+    const footerElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translate(0, 0)';
+                
+                // Apply delay if specified
+                const delay = entry.target.getAttribute('data-delay');
+                if (delay) {
+                    entry.target.style.transitionDelay = delay + 's';
+                }
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    footerElements.forEach(el => {
+        observer.observe(el);
+    });
+});
+
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar-container');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+</script>
+
+</body>
+</html>

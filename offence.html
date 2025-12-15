@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offence</title>
+    <link rel="stylesheet" href="css/offence.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+<body>
+      <!--nav bar-Start-->
+    <div class="navbar-container">
+        <div class="logo">
+            <img src="https://dawraty.com/wp-content/uploads/elementor/thumbs/%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%A8%D8%B1%D8%A7%D9%86%D9%8A-%D9%84%D9%84%D9%85%D8%A8%D8%AA%D8%AF%D8%A6%D9%8A%D9%86-%D9%85%D9%88%D9%82%D8%B9-%D8%AF%D9%88%D8%B1%D8%A7%D8%AA%D9%8A-rc1vh7cinnfpl8mss608i0jmjz5c64jya6sbshm134.png" alt="The Cortex Logo" class="logo-img">
+            <span class="logo-text">The Cortex</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html" class="active">ABOUT</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn" id="dropdown">CYBER WARFARE ▼</a>
+                <div class="dropbox">
+                    <a href="deffens.html" class="drop">DEFENCE</a>
+                    <a href="offence.html" class="drop">OFFENCE</a>
+                </div>
+            </div>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+
+<div class="data">
+  <div class="cyber_attack_container">
+      <h6 id="hetle"></h6>
+      <script>
+        function typeWriter(word, elementId = "hetle") {
+         const output = document.getElementById(elementId) || document.body.appendChild(document.createElement("pre"));
+         output.textContent = "";  
+         setTimeout(() => {
+         let i = 0;
+         const interval = setInterval(() => {
+             if (i < word.length) {
+                 output.textContent += word.charAt(i);
+                 i++;
+             } else {
+                 clearInterval(interval);  
+                 output.textContent += "\n";  
+             }
+         }, 100); 
+         }, 300);
+         }   
+        typeWriter("Types Of Attacks");
+      </script>
+      <img src="offence2.jpg" class="cyber_attack">
+  </div>
+
+        <!-- SQL -->
+      <div class="cover">
+        <h1>SQL Injection</h1>
+
+        <h3>1. Web Application Vulnerability – SQL Injection</h3>  
+        <p id="Content" style="width: 70%;">
+        A user enters a malicious input inside a login form. 
+        Because the website does not validate or sanitize the input, 
+        the database interprets the text as a command instead of normal data. As
+        a result, confidential information may be revealed.
+        </p>
+
+        <img id="example_photo" src="/Examples/SQL.jpg" alt="SQL Example">
+
+        <h3>How It Happens</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Occurs when user input is directly inserted into SQL queries.</li>
+        <li>No input validation or sanitization.</li>
+        <li>Database responses reveal too much information.</li>
+        </p>
+
+        <h3>Impact</h3>  
+        <p id="Content" style="width: max-content;">
+        <li> Use prepared statements (parameterized queries).</li>
+        <li>Apply strict input validation.</li>
+        <li>Use stored procedures.</li>
+        <li>Enable Web Application Firewall (WAF).</li>
+        </p>    
+      </div>
+      <div id="breakline"></div> 
+        <!-- ------------------------ -->
+
+        <!-- Insecure Login API -->
+      <div class="cover">
+        <h1>Insecure Login API</h1>
+
+        <h3>2. Mobile Application Vulnerability – Insecure Login API</h3>  
+        <p id="Content" style="width: 70%;">
+        A mobile app sends login credentials through an unprotected connection. 
+        An ethical tester intercepts the traffic using Burp Suite or MITMproxy 
+        and sees the username and password in plain text.
+        </p>
+
+        <img id="example_photo" src="/Examples/DATA.png" alt="Insecure Login API Example">
+
+        <h3>How It Happens</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>API does not use HTTPS.</li>
+        <li>Sensitive data is sent without encryption.</li>
+        <li>Weak or no authentication tokens.</li>
+        </p>
+
+        <h3>Impact</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Account takeover.</li>
+        <li>Unauthorized access to user data.</li>
+        <li>Replay attacks.</li>
+        </p>  
+
+        <h3>Prevention</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Enforce HTTPS/TLS encryption.</li>
+        <li>Use token-based authentication (JWT/OAuth).</li>
+        <li>Validate certificates.</li>
+        </p>  
+      </div>
+      <div id="breakline"></div>  
+        <!-- ------------------------ -->
+
+        <!-- Insecure Data Storage -->
+      <div class="cover">
+        <h1>Insecure Data Storage</h1>
+
+        <h3>3. Android Device Vulnerability – Insecure Data Storage</h3>  
+        <p id="Content" style="width: 70%;">
+        An Android app stores sensitive information such as tokens, passwords, or chats in plain text. 
+        Using ADB, an ethical tester accesses the device storage and views the unencrypted data easily.
+        </p>
+
+        <img id="example_photo" src="/Examples/InsecureStorage.png" alt="Insecure Data Storage Example">
+
+        <h3>How It Happens</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Storing sensitive data in plain text.</li>
+        <li>Using insecure storage locations.</li>
+        <li>No encryption or hashing.</li>
+        </p>
+
+        <h3>Impact</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Exposure of personal data.</li>
+        <li>Identity theft.</li>
+        <li>Session hijacking.</li>
+        </p>  
+
+        <h3>Prevention</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Encrypt local storage.</li>
+        <li>Use Android Keystore.</li>
+        <li>Avoid storing sensitive data unless necessary.</li>
+        </p>  
+      </div>
+        <div id="breakline"></div>  
+        <!-- ------------------------ -->
+
+        <!-- File Permission Misconfiguration -->
+      <div class="cover">
+        <h1>File Permission Misconfiguration</h1>
+
+        <h3>4. Desktop Application Vulnerability – File Permission Misconfiguration</h3>  
+        <p id="Content" style="width: 70%;">
+        A Windows desktop application stores configuration or credential files in a publicly accessible folder. 
+        Anyone connected to the network can access or modify these files.
+        </p>
+
+        <img id="example_photo" src="/Examples/FilePermission.png" alt="File Permission Misconfiguration Example">
+
+        <h3>How It Happens</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Incorrect file permissions.</li>
+        <li>Storing sensitive data in shared network folders.</li>
+        <li>Weak access controls.</li>
+        </p>
+
+        <h3>Impact</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Unauthorized file access.</li>
+        <li>Manipulation of configuration files.</li>
+        <li>Privilege escalation.</li>
+        </p>  
+
+        <h3>Prevention</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Use proper NTFS file permissions.</li>
+        <li>Avoid exposing internal files.</li>
+        <li>Encrypt sensitive configuration files.</li>
+        </p>  
+      </div>
+        <div id="breakline"></div>  
+        <!-- ------------------------ -->
+
+        <!-- IoT Device Vulnerability -->
+      <div class="cover">
+        <h1>IoT Device Vulnerability</h1>
+
+        <h3>5. IoT Device Vulnerability – Default Credentials</h3>  
+        <p id="Content" style="width: 70%;">
+        An IoT router or camera or router uses a default username and password. 
+        An ethical tester scans the device and finds unsecured services like Telnet or SSH, 
+        then logs in using known default credentials.
+        </p>
+
+        <img id="example_photo" src="/Examples/IoTDevice.jpg" alt="Default Credentials Example">
+
+        <h3>How It Happens</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Device is shipped with common default passwords.</li>
+        <li>No forced password change.</li>
+        <li>Exposed remote access services.</li>
+        </p>
+
+        <h3>Impact</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Full device takeover.</li>
+        <li>Spying (for cameras).</li>
+        <li>Adding device to botnets (e.g., Mirai).</li>
+        </p>  
+
+        <h3>Prevention</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Force password changes on first setup.</li>
+        <li>Disable unnecessary services.</li>
+        <li>Apply firmware updates.</li>
+        <li>Use strong password policies.</li>
+        </p>  
+      </div>
+        <div id="breakline"></div>  
+        <!-- ------------------------ -->
+
+        <!-- Phishing Attack -->
+      <div class="cover">
+        <h1>Phishing Attack</h1>
+
+        <h3>6. Social Engineering Vulnerability – Phishing Attack</h3>  
+        <p id="Content" style="width: 70%;">
+        An employee receives an email that looks identical to the company's official IT support message. 
+        The email says: “Your account will be locked. Click the link below to verify your identity.” 
+        The link opens a fake login page that perfectly copies the original website. 
+        When the employee enters their username and password, the attacker immediately receives the credentials.
+        </p>
+
+        <img id="example_photo" src="/Examples/Phishing.webp" alt="Phishing Attack Example">
+
+        <h3>How It Happens</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Attackers create fake websites that mimic real login portals.</li>
+        <li>Victims are tricked into clicking malicious links in:<br>
+            &nbsp;&nbsp;◦ Emails<br>
+            &nbsp;&nbsp;◦ SMS<br>
+            &nbsp;&nbsp;◦ WhatsApp<br>
+            &nbsp;&nbsp;◦ Fake ads</li>
+        <li>Attackers use social engineering to create urgency or fear.</li>
+        <li>No technical vulnerability is required — it targets humans, not systems.</li>
+        </p>
+
+        <h3>Impact</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>Stolen usernames and passwords.</li>
+        <li>Full account takeover (email, banking, social media).</li>
+        <li>Data breaches inside organizations.</li>
+        <li>Financial loss or unauthorized transactions.</li>
+        <li>Malware delivery (keyloggers, ransomware).</li>
+        <li>Identity theft.</li>
+        </p>  
+
+        <h3>Prevention</h3>  
+        <p id="Content" style="width: max-content;">
+        <li>User awareness training — recognize suspicious messages.</li>
+        <li>Always check:<br>
+            &nbsp;&nbsp;◦ Sender email<br>
+            &nbsp;&nbsp;◦ URL domain<br>
+            &nbsp;&nbsp;◦ HTTPS certificate</li>
+        <li>Enable Multi-Factor Authentication (MFA).</li>
+        <li>Use email filtering and anti-phishing protection.</li>
+        <li>Never click unknown links — navigate manually.</li>
+        <li>Use browser protection tools against malicious websites.</li>
+        </p>  
+      </div>
+        <div id="breakline"></div>  
+        <!-- ------------------------ -->
+
+ <!-- Footer -->
+<footer class="footer-section fade-in-up" data-delay="0.1">
+    <div class="footer-container">
+        <div class="footer-column fade-in-left">
+            <h3 class="footer-title">About Us</h3>
+            <p class="footer-text">We are dedicated to providing comprehensive cybersecurity education and awareness to help individuals and organizations stay protected in the digital world.</p>
+            <div class="subscribe-box">
+                <input type="email" placeholder="Enter your email" class="subscribe-input">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-column fade-in-up" data-delay="0.2">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="deffens.html">Defence</a></li>
+                    <li><a href="offence.html">Offence</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        <div class="footer-column fade-in-up" data-delay="0.3">
+            <h3 class="footer-title">Business Hours</h3>
+            <p class="footer-text">Mon - Friday: 10:00 am to 07:00 pm</p>
+            <p class="footer-text">Saturday: 10:00 am to 04:00 pm</p>
+            <p class="footer-text">Sunday: Holiday</p>
+        </div>
+        <div class="footer-column fade-in-right">
+            <h3 class="footer-title">Contact Info</h3>
+            <p class="footer-text">123 Cyber Street, Digital City</p>
+            <p class="footer-text">bodymgdy2@gmail.com</p>
+            <p class="footer-text">+201016583599</p>
+            <div class="footer-social">
+                <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer-social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- Typing Tagline -->
+    <div class="tagline-container fade-in-up">
+        <h4>Cyber Security for <span id="typing-tagline" class="typing-text"></span></h4>
+    </div>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&copy; 2024 The Cortex. All rights reserved.</p>
+    </div>
+</footer>
+<!--footer-end-->
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+</html>
